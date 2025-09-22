@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZAK Music Dubai - Premium Electronics & Musical Instruments UAE</title>
+  <meta name="description" content="Leading electronics and music store in Dubai offering instruments, repairs, rentals, and studio services. Piano, guitar, drums sales and services in UAE.">
+  <meta name="keywords" content="music, instruments, electronics, dubai, piano, guitar, drums, repair, rental, studio, UAE, music store">
+  <meta name="author" content="ZAK Music Dubai">
+  <meta name="canonical" href="https://zakdubai.com">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ZAK Music — Zak Electronics & Musical Instruments Co">
+  <meta property="og:description" content="Sales, rentals, repairs, and studio hire in Dubai. Contact +971 4 336 8857.">
+  <meta property="og:image" content="images/banner-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="ZAK Music Home">
+        <img src="images/logo.png" alt="ZAK Music Logo" class="logo">
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-slides">
+      <img src="images/banner-hero.jpg" alt="Pianos and instruments - ZAK Music Dubai" class="hero-img">
+      <img src="images/banner-hero-2.jpg" alt="Music showroom - ZAK Music" class="hero-img">
+    </div>
+    <div class="hero-content container">
+      <h2 id="hero-quote">Your One-Stop Music Shop</h2>
+      <p class="lead">Electronics & Musical Instruments and services</p>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="container about">
+    <h3>About Us</h3>
+    <p>ZAK Music (Zak Electronics & Musical Instruments Co) has been at the heart of the UAE’s music and electronics scene for over four decades. We are dedicated to bringing the joy of music and technology to everyone — from passionate beginners to seasoned professionals. Our commitment is simple: to offer the finest instruments, electronics, expert guidance, and services that inspire creativity.</p>
+    <p>Whether you need an instrument, electronics, a repair, a rental, or a professional studio, ZAK Music is here to make your musical and technological journey seamless and unforgettable.</p>
+    <p>Accepted payments: Cash, COD, Debit & Credit Card, Cheque,.</p>
+    <p>Visit us at our showrooms in Dubai or select one of our services below and start your next musical chapter.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="container services" style="margin-top: 1.5rem;">
+    <h3>Our Services</h3>
+    <p class="lead">Tailored solutions for events, schools and hotels</p>
+
+    <div class="tiles">
+      <!-- Piano Services -->
+      <article class="tile" data-modal="modal-piano">
+        <img src="images/piano-1.jpg" alt="Piano tuning and rental Dubai">
+        <h4>Piano Services</h4>
+        <p>Expert care for your pianos: precise tuning, safe shifting, and comprehensive servicing for all types. Our professional teams specialize in moving and tuning grand pianos. Upright and grand piano rentals also available for events and personal use.</p>
+        <button class="btn small" data-open-modal="modal-piano">Enquire Now</button>
+      </article>
+
+      <!-- Studio -->
+      <article class="tile" data-modal="modal-studio">
+        <img src="images/studio-1.jpg" alt="Music studio rental Dubai recording booth">
+        <h4>Music Studio</h4>
+        <p><strong>Deira Branch:</strong> Step into our state-of-the-art glass recording studio equipped with premium instruments and gear. Perfect for rehearsals, recordings, and creative sessions – available for hourly rentals to bring your musical visions to life.</p>
+        <a href="https://wa.me/97142719471?text=Hi%2C%20I%20would%20like%20to%20book%20the%20studio%20at%20Deira%20Branch" class="btn small" target="_blank" rel="noopener">Book Studio</a>
+      </article>
+
+      <!-- Sales -->
+      <article class="tile" data-modal="modal-sales">
+        <img src="images/sales-1.jpg" alt="Instrument sales Dubai - guitars pianos drums">
+        <h4>Sales</h4>
+        <p>Discover a wide selection of new and used instruments including guitars, violins, pianos, drums, flutes, ukuleles, and percussion from top brands. Flexible payment options to suit every budget and need.</p>
+        <button class="btn small" data-open-modal="modal-sales">Request Quotation</button>
+      </article>
+
+      <!-- Rentals -->
+      <article class="tile" data-modal="modal-rentals">
+        <img src="images/rentals-1.jpg" alt="Instrument and sound system rentals UAE">
+        <h4>Rentals & Installations</h4>
+        <p>Reliable rentals of drum sets, PA systems, and sound equipment with professional installation services for mosques, hotels, outdoor events, and more – ensuring seamless audio experiences.</p>
+        <button class="btn small" data-open-modal="modal-rentals">Enquire</button>
+      </article>
+
+      <!-- Repairs -->
+      <article class="tile" data-modal="modal-repairs">
+        <img src="images/repairs-1.jpg" alt="Instrument repair Dubai speaker repair">
+        <h4>Repairs & Service</h4>
+        <p><strong>Deira Branch:</strong> Trust our skilled technicians for instrument repairs, speaker servicing, and sound system maintenance. Drop off at our workshop for expert diagnosis and competitive quotes.</p>
+        <a href="https://wa.me/97142719471?text=Hi%2C%20I%20would%20like%20to%20get%20a%20repair%20quote%20at%20Deira%20Branch" class="btn small" target="_blank" rel="noopener">Get Repair Quote</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Modal templates (hidden) -->
+  <div id="modals">
+    <!-- Piano Services Modal -->
+    <div class="modal" id="modal-piano" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="close" data-close>×</button>
+        <h3>Piano Services</h3>
+        <p>We offer full piano care: tuning, shifting, servicing for all models. Professional teams for grand piano moves and tuning. Rentals for upright and grand pianos.</p>
+        <form action="https://formsubmit.co/sales@akm-music.com" method="POST" class="modal-form">
+          <input type="hidden" name="_subject" value="Piano services inquiry from website">
+          <input type="hidden" name="_template" value="table">
+          <label>Full name <input name="name" required placeholder="Your full name"></label>
+          <label>Phone / WhatsApp <input name="phone" required placeholder="Your phone number"></label>
+          <label>Service type
+            <select name="service_type">
+              <option>Piano Tuning</option>
+              <option>Piano Shifting/Moving</option>
+              <option>Piano Servicing/Repair</option>
+              <option>Event Rentals of Piano</option>
+              <option>Term Rental of Piano</option>
+            </select>
+          </label>
+          <label>Details<textarea name="details" placeholder="Additional details"></textarea></label>
+          <div class="modal-actions"><button class="btn" type="submit">Request Price</button></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Studio Modal -->
+    <div class="modal" id="modal-studio" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="close" data-close>×</button>
+        <h3>Studio Booking</h3>
+        <p>Book our glass studio by hour. Full instrument set & recording gear available.</p>
+        <form action="https://formsubmit.co/sales@akm-music.com" method="POST" class="modal-form">
+          <input type="hidden" name="_subject" value="Studio booking from website">
+          <input type="hidden" name="_template" value="table">
+          <label>Full name <input name="name" required placeholder="Your full name"></label>
+          <label>Phone / WhatsApp <input name="phone" required placeholder="Your phone number"></label>
+          <label>Date <input name="date" type="date" required></label>
+          <label>From
+            <input id="studio-time-from" name="time_from" type="time" min="09:00" max="21:00" required>
+          </label>
+          <label>To
+            <input id="studio-time-to" name="time_to" type="time" min="09:00" max="21:00" required>
+          </label>
+          <div class="modal-actions"><button class="btn" type="submit">Request Booking</button></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sales Modal -->
+    <div class="modal" id="modal-sales" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="close" data-close>×</button>
+        <h3>Sales — Instruments & Payments</h3>
+        <p>We supply guitars, violins, ukuleles, pianos, drums, flutes and percussion, new & used, from several brands and price ranges. We accept Cash, Card, Tabby, Cheque, Installments and PayPal.</p>
+        <form action="https://formsubmit.co/sales@akm-music.com" method="POST" class="modal-form">
+          <input type="hidden" name="_subject" value="Sales inquiry from website">
+          <input type="hidden" name="_template" value="table">
+          <label>Full name <input name="name" required placeholder="Your full name"></label>
+          <label>Phone / WhatsApp <input name="phone" required placeholder="Your phone number"></label>
+          <label>Email <input name="email" type="email" placeholder="Your email"></label>
+          <label>Tell us what you need<textarea name="message" required placeholder="Describe your needs"></textarea></label>
+          <div class="modal-actions"><button class="btn" type="submit">Send Inquiry</button></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Rentals Modal -->
+    <div class="modal" id="modal-rentals" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="close" data-close>×</button>
+        <h3>Rentals & Installations</h3>
+        <p>Drums, full PA systems and event installations. We provide setup for mosques, hotels and outdoor events.</p>
+        <form action="https://formsubmit.co/sales@akm-music.com" method="POST" class="modal-form">
+          <input type="hidden" name="_subject" value="Rental inquiry from website">
+          <input type="hidden" name="_template" value="table">
+          <label>Full name <input name="name" required placeholder="Your full name"></label>
+          <label>Phone / WhatsApp <input name="phone" required placeholder="Your phone number"></label>
+          <label>Rental type
+            <select name="rental_type">
+              <option>Drum set</option>
+              <option>PA / Sound system</option>
+            </select>
+          </label>
+          <label>Required dates <input name="dates" placeholder="e.g., 2025-09-10 to 2025-09-12"></label>
+          <label>Details<textarea name="details" placeholder="Additional details"></textarea></label>
+          <div class="modal-actions"><button class="btn" type="submit">Request Rental Quote</button></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Repairs Modal -->
+    <div class="modal" id="modal-repairs" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="close" data-close>×</button>
+        <h3>Repairs & Workshop</h3>
+        <p>We repair instruments and speakers. Diagnostic service available — bring the item to our store or request pickup for large gear.</p>
+        <form action="https://formsubmit.co/sales@akm-music.com" method="POST" class="modal-form">
+          <input type="hidden" name="_subject" value="Repair request from website">
+          <input type="hidden" name="_template" value="table">
+          <label>Full name <input name="name" required placeholder="Your full name"></label>
+          <label>Phone / WhatsApp <input name="phone" required placeholder="Your phone number"></label>
+          <label>Item to repair<textarea name="item" placeholder="e.g., Yamaha speaker model X"></textarea></label>
+          <label>Issue details<textarea name="issue" placeholder="Describe the issue"></textarea></label>
+          <div class="modal-actions"><button class="btn" type="submit">Request Repair Quote</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer + quick contact -->
+  <footer class="site-footer container">
+    <div class="footer-social-row">
+      <a href="https://wa.me/97143368857?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20ZAK%20Music%20services" target="_blank" rel="noopener" class="footer-icon" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://zakdubai.com" target="_blank" rel="noopener" class="footer-icon" title="Website">
+        <i class="fas fa-globe"></i>
+      </a>
+      <a href="https://maps.app.goo.gl/dubaizak" target="_blank" rel="noopener" class="footer-icon" title="Google Maps">
+        <i class="fas fa-map-marked-alt"></i>
+      </a>
+    </div>
+    <div class="footer-copy">© ZAK Music</div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- LocalBusiness Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicStore",
+    "name": "ZAK Music (Zak Electronics & Musical Instruments Co)",
+    "description": "Instrument sales, rentals, repairs, and studio hire in Dubai. Piano rentals, sound system installations and more.",
+    "telephone": "+97143368857",
+    "email": "sales@zakdubai.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dubai, UAE",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa 10:00-19:00",
+    "sameAs": [
+      "https://zakdubai.com"
+    ]
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery | ZAK Music Dubai</title>
+  <meta name="description" content="Gallery of ZAK Music Dubai showroom, instruments, studio and events.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <!-- Use this header on ALL pages: index.html, gallery.html, contact.html -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="ZAK Music Home">
+        <img src="images/logo.png" alt="ZAK Music Logo" class="logo">
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="container gallery-page">
+    <h2>Gallery</h2>
+    <p class="lead">Click image to enlarge. Use pagination to load more images.</p>
+
+    <div id="galleryGrid" class="gallery-grid"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-social-row">
+      <a href="https://wa.me/97143368857" target="_blank" rel="noopener" class="footer-icon" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://zakdubai.com" target="_blank" rel="noopener" class="footer-icon" title="Website">
+        <i class="fas fa-globe"></i>
+      </a>
+      <a href="https://maps.app.goo.gl/dubaizak" target="_blank" rel="noopener" class="footer-icon" title="Google Maps">
+        <i class="fas fa-map-marked-alt"></i>
+      </a>
+    </div>
+    <div class="footer-copy">© ZAK Music</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // List of all gallery images
+    const GALLERY_IMAGES = [
+      '1.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '11.jpg', '12.jpg', '13,jpg.jpg',
+      'banner-hero-2.jpg', 'banner-hero.jpg', 'CEO Photo.jpg', 'Guitar Display 1.jpg',
+      'Guitars Display 2.jpg', 'logo with background.jpg', 'logo.PNG', 'piano-1.jpg',
+      'PIanos.jpg', 'rentals-1.jpg', 'repairs-1.jpg', 'sales-1.jpg', 'Showroom front.jpg',
+      'Staff Group photo.jpg', 'studio-1.jpg'
+    ];
+    // initialize gallery pagination (script.js contains gallery renderer function)
+    window.addEventListener('DOMContentLoaded', ()=> {
+      if (window.renderGallery) renderGallery(GALLERY_IMAGES, 12); // 12 images per page
+    });
+  </script>
+</body>
+</html>
