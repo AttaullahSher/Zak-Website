@@ -1,0 +1,3 @@
+- Change CSS variables: --primary to red (#dc2626)
+- Update hardcoded blue colors to red equivalents in styles.css
+- Test the website to ensure red theme is applied
